@@ -62,7 +62,7 @@ server.post('/api/login', validate, (req, res) => {
 
                 })
             } else {
-                res.status(401).json({ message: 'Invalid Credentials' });
+                res.status(401).json({ message: 'You shall not pass!' });
             }
         })
         .catch(error => {
